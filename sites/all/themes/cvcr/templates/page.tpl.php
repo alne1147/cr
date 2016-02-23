@@ -75,6 +75,7 @@
       <section class="l-header-region row">
         <div class="columns">
           <?php print render($page['header']); ?>
+		  <div id="logo"></div>
         </div>
       </section>
       <!--/.l-header-region -->
@@ -145,7 +146,6 @@
       <?php endif; ?>
 
       <?php print render($page['content']); ?>
-       <p>LOLOOLOLOL</p>
 
     </div>
     <!--/.l-main region -->
