@@ -1,0 +1,25 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+// Example parametrics.
+// ------------------------------------------------------
+// %font-FONTNAME   {}
+// %font-sans-serif { font-family: sans-serif; }
+// %font-serif      { font-family: serif; }
+
+$font-stack:    Helvetica, sans-serif;
+$erie-color: #4891E7;
+$mead-color: #90CC54;
+
+body.section-erie {
+  font: 100% $font-stack;
+  
+  	h1#page-title
+  	{
+  	color: $erie-color;
+	}
+}
+
+.alert-box
+{
+	display:none;
+}

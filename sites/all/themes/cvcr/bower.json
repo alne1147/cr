@@ -1,0 +1,10 @@
+{
+  "name": "zurb_foundation",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "motion-ui": "~1.2.0"
+  }
+}
