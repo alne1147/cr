@@ -208,7 +208,7 @@
   <?php endif; ?>
 
   <!--.l-footer -->
-  <footer class="l-footer panel row" role="contentinfo">
+  <footer class="l-footer full-width" role="contentinfo">
     <?php if (!empty($page['footer'])): ?>
       <div class="footer columns">
         <?php print render($page['footer']); ?>

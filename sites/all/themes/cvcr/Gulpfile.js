@@ -75,7 +75,7 @@ gulp.task('drush:cc', function () {
 
 gulp.task('watch', function() {
   browserSync({
-    proxy: "cvcr:8888"
+    proxy: "cr:8888"
   });
 
   // watch scss, js, and tpl files and clear drupal theme cache on change, reload browsers
