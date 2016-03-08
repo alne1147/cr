@@ -1,0 +1,31 @@
+ul.menu
+{
+	float:right;
+	margin-top:250px;
+	
+}
+ul.menu li
+{
+	display:block;
+	float:left;
+	padding:10px;
+	margin-left:10px;
+	/* Rectangle 10: */
+	background: #4891E7;
+	border-radius: 2px;
+	/* Erie: */
+	font-family: TrebuchetMS;
+	font-size: 14px;
+	color: #FFFFFF;
+	&.menu-605{
+		background:#90CC54;
+	}
+	&.menu-607{
+		background:#7528B9;
+	}
+}
+ul.menu li a
+{
+	color:white;
+}
+
