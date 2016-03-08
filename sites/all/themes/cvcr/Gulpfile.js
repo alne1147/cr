@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var shell = require('gulp-shell');
 var notify = require('gulp-notify');
-var browserSync = require('browser-sync');
+var liveReload = require('gulp-livereload');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
@@ -74,23 +74,23 @@ gulp.task('drush:cc', function () {
 });
 
 gulp.task('watch', function() {
-  browserSync({
+  liveReload({
     proxy: "cr:8888"
   });
 
   // watch scss, js, and tpl files and clear drupal theme cache on change, reload browsers
   gulp.watch(['scss/**/*.scss'], function() {
     gulp.run('sass');
-  }).on("change", browserSync.reload);
+  }).on("change", liveReload.reload);
 
   gulp.watch(['js/**/*.js', '!js/scripts.js', 'js/**/*.jsx'], function() {
     gulp.run('react');
     gulp.run('compress');
-  }).on("change", browserSync.reload);
+  }).on("change", liveReload.reload);
 
   gulp.watch(['templates/**/*.tpl.php'], function() {
 
-  }).on("change", browserSync.reload);
+  }).on("change", liveReload.reload);
 
 });
 

@@ -2,7 +2,6 @@
   "name": "hickenlooper",
   "version": "0.0.1",
   "devDependencies": {
-    "browser-sync": "^2.4.0",
     "embittered": "0.0.9",
     "gulp": "^3.8.11",
     "gulp-babel": "^5.2.1",
