@@ -9,7 +9,7 @@
       <?php if ($top_bar_classes): ?>
         <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
-      <nav class="top-bar show-for-small-only" data-topbar <?php print $top_bar_options; ?>>
+      <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
         <ul class="title-area">
           <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
           <li class="toggle-topbar menu-icon">
@@ -75,7 +75,7 @@
       <section class="l-header-region row">
         <div class="columns">
           <?php print render($page['header']); ?>
-		  <div id="logo"></div>
+		  <div id="logo" class="small-6 columns"></div>
         </div>
       </section>
       <!--/.l-header-region -->
