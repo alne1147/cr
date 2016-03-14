@@ -1,7 +1,9 @@
-.block-menu-menu-region-menu{
+.l-header ul.menu li a
+{
+	color           : white;
+}
 	
-
-ul.menu li
+.block-menu-menu-region-menu ul.menu li
 {
 	display         : block;
 	float           : left;
@@ -20,21 +22,21 @@ ul.menu li
 		background     : #7528B9;
 	}
 }
-}
 
-.block-menu-block-1 {
-	
+.block-menu-block-1 
+{
+	ul.menu {
+		background: #7528B9;
+		border-radius: 7px;
+		padding:10px;
+		float:left;
+	}
 
 ul.menu li
 {
 	display         : block;
 	float           : left;
-	padding         : 10px;
 	margin-left     : 10px;
-	/* Rectangle 10 : */
-	background      : #4891E7;
-	border-radius   : 2px;
-	/* Erie         : */
 	font-size       : 14px;
 	color           : #FFFFFF;
 }
