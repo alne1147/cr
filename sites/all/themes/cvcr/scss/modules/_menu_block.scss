@@ -1,31 +1,42 @@
-ul.menu
-{
-	float:right;
-	margin-top:250px;
+.block-menu-menu-region-menu{
 	
-}
+
 ul.menu li
 {
-	display:block;
-	float:left;
-	padding:10px;
-	margin-left:10px;
-	/* Rectangle 10: */
-	background: #4891E7;
-	border-radius: 2px;
-	/* Erie: */
-	font-family: TrebuchetMS;
-	font-size: 14px;
-	color: #FFFFFF;
+	display         : block;
+	float           : left;
+	padding         : 10px;
+	margin-left     : 10px;
+	/* Rectangle 10 : */
+	background      : #4891E7;
+	border-radius   : 2px;
+	/* Erie         : */
+	font-size       : 14px;
+	color           : #FFFFFF;
 	&.menu-605{
-		background:#90CC54;
+		background     : #90CC54;
 	}
 	&.menu-607{
-		background:#7528B9;
+		background     : #7528B9;
 	}
 }
-ul.menu li a
-{
-	color:white;
 }
 
+.block-menu-block-1 {
+	
+
+ul.menu li
+{
+	display         : block;
+	float           : left;
+	padding         : 10px;
+	margin-left     : 10px;
+	/* Rectangle 10 : */
+	background      : #4891E7;
+	border-radius   : 2px;
+	/* Erie         : */
+	font-size       : 14px;
+	color           : #FFFFFF;
+}
+
+}
