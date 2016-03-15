@@ -72,10 +72,12 @@
 
   
       <!--.l-header-region -->
+	  <div id="darkbar" class="full-width">sss</div>
       <section class="l-header-region row">
         <div class="columns">
+			
 			  <div id="logo" class="small-12 columns"></div>
-	        </div>
+			</div>
           <?php print render($page['header']); ?>
 		  
       </section>
