@@ -74,9 +74,10 @@
       <!--.l-header-region -->
       <section class="l-header-region row">
         <div class="columns">
+			  <div id="logo" class="small-12 columns"></div>
+	        </div>
           <?php print render($page['header']); ?>
-		  <div id="logo" class="small-6 columns"></div>
-        </div>
+		  
       </section>
       <!--/.l-header-region -->
 

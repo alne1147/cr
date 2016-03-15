@@ -3,22 +3,33 @@
 	color           : white;
 }
 	
+.block-menu-menu-region-menu ul.menu
+{
+	margin-bottom:0px;
+}	
+
 .block-menu-menu-region-menu ul.menu li
 {
 	display         : block;
+	width           : 114px;
 	float           : left;
+	margin-right    : 5px;
 	padding         : 10px;
-	margin-left     : 10px;
 	/* Rectangle 10 : */
 	background      : #4891E7;
 	border-radius   : 2px;
 	/* Erie         : */
 	font-size       : 14px;
+	text-align      : center;
 	color           : #FFFFFF;
 	&.menu-605{
+		background     : #4891E7;
+	}
+	&.menu-604{
 		background     : #90CC54;
 	}
-	&.menu-607{
+	
+	&.menu-603{
 		background     : #7528B9;
 	}
 }
@@ -26,10 +37,11 @@
 .block-menu-block-1 
 {
 	ul.menu {
-		background: #7528B9;
-		border-radius: 7px;
-		padding:10px;
-		float:left;
+		background     : #7528B9;
+		border-radius  : 2px;
+		padding        : 10px;
+		float          : left;
+		margin-bottom: 0px !important;
 	}
 
 ul.menu li
