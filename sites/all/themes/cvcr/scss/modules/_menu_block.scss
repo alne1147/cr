@@ -16,7 +16,6 @@
 	margin-right    : 5px;
 	padding         : 10px;
 	/* Rectangle 10 : */
-	background      : #4891E7;
 	border-radius   : 2px;
 	/* Erie         : */
 	font-size       : 14px;
@@ -53,13 +52,35 @@ ul.menu li
 	color           : #FFFFFF;
 	text-align:center;
 }
+body.section-mead .block-menu-menu-region-menu ul.menu li a:hover
+{
+background-color: red;
+}
 
 }
 body.section-mead .block-menu-block-1 ul.menu
 {
-	background     : #90cc54;
+	background     :$mead-color;
 }
 body.section-erie .block-menu-block-1 ul.menu
 {
-background     : #4891e7;	
+background     : $erie-color;	
+}
+body.section-carbon-valley .block-menu-block-1 ul.menu
+{
+	background:$cv-color;
+}
+
+.block-menu-menu-region-menu ul.menu 
+{
+	li.menu-603:hover{
+		background-color: darken($cv-color, 13.5%);
+	}
+	li.menu-604:hover{
+		background-color: darken($mead-color, 13.5%);
+	}
+	li.menu-605:hover{
+		background-color: darken($erie-color, 13.5%);
+	}
+	
 }
