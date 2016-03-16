@@ -2,21 +2,41 @@
 
 .l-header-region
 {
+	min-height : 200px;
 }
-
+#logo
+{
+	height:162px;
+}
 body.section-erie #logo
 {
-height            : 105px;
-display           : block;
-background        : url('../img/logo-erie.png') no-repeat 0 0;	
+
+display     : block;
+background  : url('../img/logo-erie.png') no-repeat 0 0;	
 }
-.logo-back
-{
-	background-color : black;
-}
+
 #darkbar{
-background        : rgba(0,0,0,0.61);
-top:100px;
-position:relative;
-height:100px;
+background  : rgba(0,0,0,0.61);
+top         : 100px;
+position    : relative;
+height      : 100px;
+}
+
+body.section-carbon-valley #logo
+
+{
+	background : url('../img/logo-cv.png') no-repeat 0 0;
+
+	display     : block;	
+	
+}
+
+#contact li
+{
+	color:white;
+	
+	a{
+		color:white;
+		text-decoration:none;
+	}
 }

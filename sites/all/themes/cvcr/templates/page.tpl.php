@@ -72,14 +72,16 @@
 
   
       <!--.l-header-region -->
-	  <div id="darkbar" class="full-width">sss</div>
       <section class="l-header-region row">
-        <div class="columns">
-			
-			  <div id="logo" class="small-12 columns"></div>
+        <div class="columns">		
+			  <div class="small-6 small-push-12 columns"><img src="sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv"></div>
+			  <div id="contact" class="small-4 small-offset-2 columns">
+				  <ul>
+					  <li>303-833-5997</li>
+					  <li>carbonvalley@gmail.com</li>
+				  </div>
 			</div>
-          <?php print render($page['header']); ?>
-		  
+          <?php print render($page['header']); ?>  
       </section>
       <!--/.l-header-region -->
 

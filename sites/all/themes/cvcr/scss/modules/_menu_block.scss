@@ -48,9 +48,18 @@ ul.menu li
 {
 	display         : block;
 	float           : left;
-	margin-left     : 10px;
+	margin     : 0px 10px;
 	font-size       : 14px;
 	color           : #FFFFFF;
+	text-align:center;
 }
 
+}
+body.section-mead .block-menu-block-1 ul.menu
+{
+	background     : #90cc54;
+}
+body.section-erie .block-menu-block-1 ul.menu
+{
+background     : #4891e7;	
 }
