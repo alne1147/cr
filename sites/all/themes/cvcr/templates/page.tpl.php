@@ -74,7 +74,7 @@
       <!--.l-header-region -->
       <section class="l-header-region row">
         <div class="columns">		
-			  <div class="small-6 small-push-12 columns"><img src="sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv"></div>
+			  <div class="small-6 small-push-12 columns"><img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv"></div>
 			  <div id="contact" class="medium-4 medium-offset-2 columns show-for-medium-up">
 				  <ul>
 					  <li>303-833-5997</li>

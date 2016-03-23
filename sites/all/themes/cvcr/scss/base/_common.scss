@@ -24,7 +24,7 @@ body.section-erie {
 {
 	display:none;
 }
-
+.view-featured-sliders .readmore a,
 .field-name-field-button a {
 	/* Rectangle 10: */
 background-image: linear-gradient(-180deg, #A693D6 0%, #6D5AAC 100%);
@@ -33,6 +33,8 @@ border-radius: 2px;
 text-align:center;
 padding:10px;
 color:white;
+margin:10px 0;
+float:left;
 }
 .flex-direction-nav
 {
