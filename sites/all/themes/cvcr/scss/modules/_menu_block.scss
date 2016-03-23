@@ -29,14 +29,14 @@
 	}
 	
 	&.menu-603{
-		background     : #7528B9;
+		background     : $cv-color;
 	}
 }
 
 .block-menu-block-1 
 {
 	ul.menu {
-		background     : #7528B9;
+		background     : $cv-color;
 		border-radius  : 2px;
 		padding        : 10px;
 		float          : left;
@@ -51,6 +51,10 @@ ul.menu li
 	font-size       : 14px;
 	color           : #FFFFFF;
 	text-align:center;
+}
+ul.menu li a:hover
+{
+	text-decoration:underline; 
 }
 body.section-mead .block-menu-menu-region-menu ul.menu li a:hover
 {

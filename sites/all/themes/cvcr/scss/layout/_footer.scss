@@ -6,4 +6,17 @@
 	border-top:4px solid $erie-color;
 	margin-top:30px;
 	padding:10px;
+	
+	li {
+		color: darken($white, 75.5%);
+	}
+	
+	a{
+		color:white;
+	}
+	
+	h2 {
+		color:white;
+	}
 }
+

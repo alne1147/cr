@@ -9,7 +9,7 @@
 $font-stack:    Helvetica, sans-serif;
 $erie-color: #4891E7;
 $mead-color: #90CC54;
-$cv-color:#7528B9;
+$cv-color:#9681bf;
 
 body.section-erie {
   font: 100% $font-stack;
@@ -26,15 +26,20 @@ body.section-erie {
 }
 .view-featured-sliders .readmore a,
 .field-name-field-button a {
-	/* Rectangle 10: */
-background-image: linear-gradient(-180deg, #A693D6 0%, #6D5AAC 100%);
-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	background:$cv-color;
+
+
 border-radius: 2px;
 text-align:center;
-padding:10px;
+padding:6px;
 color:white;
 margin:10px 0;
 float:left;
+
+&:hover {
+	background: darken($cv-color, 13.5%);
+}
+	
 }
 .flex-direction-nav
 {
