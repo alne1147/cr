@@ -17,7 +17,7 @@
  *
  * @see template_preprocess_menu_block_wrapper()
  */
-?><div class="small-4 columns">
+?><div class="small-3 columns small-offset-1">
   <?php print render($title_prefix); ?>
   <?php if ($block->subject): ?>
     <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
