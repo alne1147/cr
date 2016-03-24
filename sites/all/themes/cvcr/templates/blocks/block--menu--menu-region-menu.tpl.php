@@ -41,7 +41,7 @@
  * @see template_process()
  */
 ?>
-<div class="large-12 columns small-12 medium-12">
+<div class="large-11 large-offset-1 columns small-12 medium-12 ">
 <?php if ($block->delta != 'main'): ?>
 <section class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php endif; ?>
