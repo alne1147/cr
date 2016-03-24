@@ -13,13 +13,9 @@ $erie-color: #4891E7;
 $mead-color: #90CC54;
 $cv-color:#9681bf;
 
-body.section-erie {
+body {
   font: 100% $font-stack;
-  
-  	h1#page-title
-  	{
-  	color: $erie-color;
-	}
+
 }
 
 .alert-box
@@ -51,4 +47,10 @@ float:left;
 .pane-featured-sliders h2
 {
 	display:none;
+}
+.view-featured-sliders
+{
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }

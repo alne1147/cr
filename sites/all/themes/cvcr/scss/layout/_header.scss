@@ -2,7 +2,7 @@
 
 .l-header-region
 {
-	min-height : 200px;
+	height : 300px;
 }
 .l-header-region .columns
 {
@@ -21,9 +21,11 @@ background  : url('../img/logo-erie.png') no-repeat 0 0;
 
 #darkbar{
 background  : rgba(0,0,0,0.61);
-top         : 100px;
-position    : relative;
-height      : 100px;
+//top         : 100px;
+//position    : relative;
+//height      : 100px;
+margin-top:50px;
+padding:10px;
 }
 
 body.section-carbon-valley #logo
@@ -34,13 +36,30 @@ body.section-carbon-valley #logo
 	display     : block;	
 	
 }
-
+#contact 
+{
+	margin-top:40px;
+}
 #contact li
 {
 	color:white;
+	padding-left:30px;
+	list-style:none;
+	margin-bottom:10px;
 	
 	a{
 		color:white;
 		text-decoration:none;
 	}
+
+}
+
+#contact li.phone
+{
+	background : url('../img/phone.svg') no-repeat 0 0;
+}
+
+#contact li.email
+{
+	background : url('../img/email.svg') no-repeat 0 0;
 }

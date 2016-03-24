@@ -55,7 +55,7 @@
         <?php endif; ?>
 
         <?php if ($alt_main_menu): ?>
-          <nav id="main-menu" class="navigation" role="navigation">
+          <nav id="main-menu" class="navigation show-for-medium" role="navigation">
             <?php print ($alt_main_menu); ?>
           </nav> <!-- /#main-menu -->
         <?php endif; ?>
@@ -72,13 +72,13 @@
 
   
       <!--.l-header-region -->
-      <section class="l-header-region row">
-        <div class="columns">		
-			  <div class="small-6 small-push-12 columns"><img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv"></div>
-			  <div id="contact" class="medium-4 medium-offset-2 columns show-for-medium-up">
+      <section class="l-header-region expanded">
+        <div class="columns" id="darkbar">		
+			  <div class="small-5 small-push-12 small-offset-1 columns"><img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv"></div>
+			  <div id="contact" class="small-6 columns show-for-medium-up">
 				  <ul>
-					  <li>303-833-5997</li>
-					  <li>carbonvalley@gmail.com</li>
+					  <li class="phone">303-833-5997</li>
+					  <li class="email">carbonvalley@gmail.com</li>
 				  </div>
 			</div>
           <?php print render($page['header']); ?>  
@@ -87,6 +87,7 @@
 
 
   </header>
+
   <!--/.l-header -->
 
   <?php if (!empty($page['featured'])): ?>

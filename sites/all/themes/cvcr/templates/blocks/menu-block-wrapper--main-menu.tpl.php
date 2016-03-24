@@ -17,7 +17,7 @@
  *
  * @see template_preprocess_menu_block_wrapper()
  */
-?><div class="small-6 columns">
+?><div class="small-5 small-offset-1 columns hide-for-small">
 <div class="<?php print $classes;?>">
   <?php print render($content); ?>
 </div>
