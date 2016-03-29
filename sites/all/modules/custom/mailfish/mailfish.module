@@ -51,3 +51,24 @@ function mailfish_email_form_validate($form, &$form_state){
 		form_set_error('email', $message);
 	}
 }
+/**
+*Submission handler for mailfish_email_form
+*/
+function mailfish_email_form_submit($form, &$form_state) {
+  $nid = isset($form_state['values']['nid']) ? $form_state['values']['nid'] : 0;
+  if ($nid && is_numeric($nid)) {
+	  mailfish_signup($form_state['values']['email'], $nid);
+	  drupal_set_message(t('Thanks for joining mailing list. You have been added as %email.', array('%email' => $form_state['value']['email'])));
+  }
+}
+
+function mailfish_signup($email, $nid){
+  global $user;
+  $value = array (
+    'nid' => $nid,
+    'uid' => $user->uid,
+    'mail'=> $email,
+    'created' => time(),
+ );
+  drupal_write_record('mailfish', $value);
+}
