@@ -20,7 +20,7 @@ body {
 
 .alert-box
 {
-	display:none;
+	z-index:2005 !important;
 }
 .view-featured-sliders .readmore a,
 .field-name-field-button a {

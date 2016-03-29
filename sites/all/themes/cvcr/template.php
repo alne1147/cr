@@ -29,5 +29,8 @@ function cvcr_menu_link(array $variables) {
 //dvm($variables['element']);
   return theme_menu_link($variables);
 }
-?>
+
+$output = '<div id="status-messages" class="reveal-modal" >'. $output;
+ $output .= '<a class="close-reveal-modal">&#215;</a>';
+ $output .= '</div><div class="reveal-modal-bg"></div>';
 

@@ -1,0 +1,15 @@
+<?php
+
+/**
+*Implementation of hook_node_view()
+*/
+
+function redlink_node_view ($node,$view_mode) {
+	$link_text = t('Delete this node');
+	$link_options = array (
+	'attributes' => array('style'=>'color:red'),
+	);
+	$link_markup = l($link_text, "node/$node->nid/delete", $link_options);
+	$node->content['redlink'] = array();
+	$node->content['redlink']['#markup'] = $link_markup;
+}

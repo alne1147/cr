@@ -1,0 +1,53 @@
+<?php
+
+/**
+* Implementation of hook_menu() for mailfish module
+*/
+function mailfish_menu() {
+  $items = array();
+  $items ['node/%/subscribe'] = array(
+  'title' => 'Subscribe',
+  'description' => 'Subscribe to this node',
+  'page callback' => 'drupal_get_form',
+  'page arguments' => array('mailfish_email_form', 1),
+  'access arguments' => array('access content'),
+  'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+/**
+* Provide the form to add an email address
+*/
+
+function mailfish_email_form($form, $form_state, $nid = 0) {
+  global $user;
+  $form['email'] = array(
+  '#title' => t('Email Address'),
+  '#type' => 'textfield',
+  '#size' => 25,
+  '#description' => t('Join our mailing list'),
+  '#required' => TRUE,
+  '#default_value' => isset($user->mail) ? $user->mail : '',
+  );
+  $form['submit'] = array(
+  '#type' => 'submit',
+  '#value' => t('Sign Up!'),
+);
+$form['nid'] = array(
+  '#type' => 'hidden',
+  '#value' => $nid,
+);
+return $form;
+}
+
+/**
+* Validation Handler for mailfish_email_form
+*/
+function mailfish_email_form_validate($form, &$form_state){
+	$email = $form_state['values']['email'];
+	if (!valid_email_address ($email)) {
+		$message = t('Not a valid email address!', array('%email' => $email));
+		form_set_error('email', $message);
+	}
+}

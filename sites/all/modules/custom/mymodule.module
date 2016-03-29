@@ -1,5 +1,0 @@
-<?php
-function mymodule_init() {
-  dpm("It's working");
-}
-	

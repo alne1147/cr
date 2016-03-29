@@ -19,6 +19,10 @@
   z-index: 999;
 }
 
+.reveal-modal-bg {
+  z-index: 998;
+}
+
 // Override Drupal Core pager styles. This is necessary because we need to keep
 // the .pager class on pagers for Views AJAX to work. If you are disabling
 // Drupal Core CSS you can safely comment the following lines.

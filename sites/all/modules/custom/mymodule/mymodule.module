@@ -1,0 +1,21 @@
+<?php
+function mymodule_menu() {
+$items = array();
+$items ['mymodule'] = array (
+'title' => 'My Page',
+'description' => 'Landing Page for My Module',
+'page callback' => 'mymodule_callback',
+'access arguments' => array('access content')
+  );
+  return $items;
+}
+	
+function mymodule_callback() {
+	return 'My first page callback';
+}
+
+function mymodule_form_alter(&$form, $form_state, $form_id) {
+	if ($form_id == 'comment_node_article_form')  {
+		$form['actions']['submit']['#value'] = t('Comment');
+	}
+}
