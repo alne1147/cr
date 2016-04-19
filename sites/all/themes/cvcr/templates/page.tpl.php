@@ -74,8 +74,28 @@
       <!--.l-header-region -->
       <section class="l-header-region expanded">
         <div class="columns" id="darkbar">		
-			  <div class="small-5 small-push-12 small-offset-1 columns"><img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv"></div>
-			  <div id="contact" class="small-6 columns show-for-medium-up">
+			  <div class="small-5 small-push-12 small-offset-1 columns">
+          
+        
+         
+         <?php
+         if(basename($_SERVER['REQUEST_URI']) == 'mead'){
+          echo '<img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-mead.png" width="400" height="128" alt="Logo Cv">';
+         }
+         
+         if(basename($_SERVER['REQUEST_URI']) == 'erie'){
+          echo '<img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-erie.png" width="400" height="128" alt="Logo Cv">';
+         }
+         
+         if(basename($_SERVER['REQUEST_URI']) == 'carbon-valley'){
+          echo '<img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv">';
+         }
+        
+         
+         ?>
+         </div>
+        
+        <div id="contact" class="small-6 columns show-for-medium-up">
 				  <ul>
 					  <li class="phone">303-833-5997</li>
 					  <li class="email">carbonvalley@gmail.com</li>
