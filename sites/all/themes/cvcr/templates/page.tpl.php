@@ -83,11 +83,11 @@
           echo '<img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-mead.png" width="400" height="128" alt="Logo Cv">';
          }
          
-         if(basename($_SERVER['REQUEST_URI']) == 'erie'){
+         elseif(basename($_SERVER['REQUEST_URI']) == 'erie'){
           echo '<img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-erie.png" width="400" height="128" alt="Logo Cv">';
          }
          
-         if(basename($_SERVER['REQUEST_URI']) == 'carbon-valley'){
+         else {
           echo '<img src="http://www.cr.athena-server.com/cr/sites/all/themes/cvcr/img/logo-cv.png" width="400" height="128" alt="Logo Cv">';
          }
         
