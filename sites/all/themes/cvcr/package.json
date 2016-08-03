@@ -1,5 +1,5 @@
 {
-  "name": "hickenlooper",
+  "name": "cvcr",
   "version": "0.0.1",
   "devDependencies": {
     "embittered": "0.0.9",
@@ -10,7 +10,7 @@
     "gulp-main-bower-files": "^1.2.3",
     "gulp-notify": "^2.2.0",
     "gulp-react": "^3.0.1",
-    "gulp-sass": "*",
+    "gulp-sass": "^2.3.2",
     "gulp-shell": "^0.4.0",
     "gulp-sourcemaps": "^1.5.1",
     "gulp-uglify": "^1.1.0",
@@ -22,6 +22,11 @@
     "node-refills": "^1.0.1",
     "rimraf": "*"
   },
+  { "license" : "BSD-3-Clause" },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/alne1147"},
+  
   "scripts": {
     "postinstall": "node_modules/.bin/rimraf node_modules/**/*.info"
   }
