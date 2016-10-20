@@ -56,6 +56,8 @@ main
 	padding-bottom:20px;
 }
 
+
+
 //Mead Specific Colors
 body.section-mead
 {
@@ -80,4 +82,13 @@ body.section-erie
 	{
 		background-color:$erie-color;
 	}
+}
+
+.field-name-field-authors
+{
+	float:left;
+	display:inline;
+	padding:5px;
+	border:2px solid #e3e3e3;
+	margin:10px;
 }
